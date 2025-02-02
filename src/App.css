@@ -28,6 +28,36 @@
   color: #61dafb;
 }
 
+.subscribe-button {
+  border: none !important;
+  border-radius: 20px !important;
+  background-color: #fd976e !important;
+  color: black !important;
+  padding: 12px 27px !important;
+  font-weight: bold !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.subscribe-button:hover {
+  background-color: #ffbd59 !important;
+}
+
+.navbar-toggler {
+  padding: 0;
+  margin: 0 10px;
+  border: none;
+  background-color: #ffbd59 !important;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #ffbd59;
+  background-size: contain;
+  background-position: center;
+  border-radius: 4px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

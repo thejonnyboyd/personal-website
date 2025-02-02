@@ -7,19 +7,18 @@ import { Container, Card, Row } from "react-bootstrap";
 
 const Layout = () => {
   return (
-    <Container className="card border-primary mb-12">
-      <Row className="card border-primary mb-12">
-        <Card style={{ width: "100%" }}>
-          <Card.Body>
-            <Header />
-          </Card.Body>
-        </Card>
-      </Row>
-      
-      <main style={{ padding: "1rem" }}>
+    <div style={{ minHeight: "100vh" }}>
+      <div style={{ paddingTop:"20px" }}>
+      <header style={{ backgroundColor: "#faf6f4", padding: "10px 20px", borderRadius:"12px 12px 0 0", margin:"0 60px" }}>
+        <Container fluid>
+          <Header />
+        </Container>
+      </header>
+      </div>
+      <main style={{ backgroundColor: "#faf6f4", padding: "10px 20px", borderRadius:"0 0 12px 12px", margin:"0 60px", fontFamily:"Quicksand", fontWeight:"bold"}}>
         <Outlet />
       </main>
-    </Container>
+    </div>
   );
 };
 

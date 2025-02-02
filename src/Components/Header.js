@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import {
   Container,
   Row,
@@ -39,7 +40,10 @@ const Header = () => {
               className="w-100"
               style={{ justifyContent: "center" }}
             >
-              <Navbar.Toggle aria-controls="navbar-nav" />
+              <Navbar.Toggle
+                aria-controls="navbar-nav"
+                className="custom-toggler"
+              />
               <Navbar.Collapse id="navbar-nav">
                 <Nav
                   className="mx-auto"
@@ -57,27 +61,20 @@ const Header = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                   <NavDropdown title="About" id="about-dropdown">
-                    <NavDropdown.Item as={NavLink} to="/about">
+                    <NavDropdown.Item as={NavLink} to="/aboutme">
                       About Me
                     </NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/Gear">
+                    <NavDropdown.Item as={NavLink} to="/gear">
                       Gear
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
+                <NavLink to="/newsletter" className="nav-link">
+                  <Button className="subscribe-button">
+                    Subscribe to the newsletter
+                  </Button>
+                </NavLink>
               </Navbar.Collapse>
-              <NavLink to="/newsletter" className="nav-link">
-                <Button
-                  style={{
-                    border: "none",
-                    borderRadius: "20px",
-                    backgroundColor: "lightsalmon",
-                    color: "black",
-                  }}
-                >
-                  Newsletter
-                </Button>
-              </NavLink>
             </Navbar>
           </Col>
         </Row>

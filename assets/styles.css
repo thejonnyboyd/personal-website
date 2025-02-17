@@ -9,8 +9,8 @@ body {
 }
 
 .content-wrapper {
-  max-width: 700px;
-  margin: 50px auto;
+  max-width: 900px;
+  margin: 25px auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -62,34 +62,109 @@ body {
   text-decoration: underline;
 }
 
-.dark-light-toggle {
-  height: 25px;
-  width: auto;
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
-.light-toggle:hover {
-  filter: brightness(0.5);
+.intro-image {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dark-toggle:hover {
-  filter: brightness(0.8);
+.intro-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
-h1 {
-  font-size: 32px;
+.intro-text {
+  flex: 1;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  padding: 0 10px;
+}
+
+.intro-text h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 10px 0;
+  color: black;
+}
+
+.intro-text p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro-text a{
+  font-family: "Bower-Bold";
+  font-size: 1.7rem;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+
+.underline img {
+  display: block;
+  width: 180%; 
+  height: auto;
+  position: absolute;
+  bottom: -20px; 
+  left: -80px; 
 }
 
 @font-face {
-    font-family: "Bower-Bold";
-    src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot");
-    src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot?#iefix")
-        format("embedded-opentype"),
-      url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff2")
-        format("woff2"),
-      url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff")
-        format("woff"),
-      url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.ttf")
-        format("truetype"),
-      url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.svg#Bower-Bold")
-        format("svg");
+  font-family: "Bower-Bold";
+  src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot");
+  src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.svg#Bower-Bold")
+      format("svg");
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
+
+  .intro-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .intro-image img {
+    max-width: 200px;
+  }
+
+  .intro-text a{
+    font-size: 1.1rem;
+  }
+
+  .underline img {
+    display: block;
+    width: 180%; 
+    height: auto;
+    position: absolute;
+    bottom: -12px; 
+    left: -50px; 
+  }
+}

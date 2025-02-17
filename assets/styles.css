@@ -2,8 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: #f6f1ec;
   box-sizing: border-box;
   font-family: "Bower-Bold, sans-serif";
 }
@@ -107,6 +106,7 @@ body {
 .intro-text a{
   font-family: "Bower-Bold";
   font-size: 1.7rem;
+  color: #333;
 }
 
 .underline {
@@ -124,6 +124,86 @@ body {
   left: -80px; 
 }
 
+.newsletter-landing{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 15px 0;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.newsletter-landing-text{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  min-width: 300px;
+}
+
+.newsletter-landing-text h3{
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.newsletter-landing-text h2{
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "Bowser-Bold";
+  margin: 0;
+}
+
+.newsletter-landing-text img {
+  width: 60%; 
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  rotate: -20deg;
+  transform: translate(20px, -50%); 
+}
+
+.newsletter-landing-text ul {
+  padding: 0 20px;
+  margin: 10px 10px;
+}
+
+.newsletter-landing-text button{
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  background-color: #fd976e;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.newsletter-landing-text button:hover{
+  background-color: #ffbd59;
+  transition: 0.3s ease;
+}
+
+.newsletter-landing-text a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.newsletter-button-landing-wrap{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+
 @font-face {
   font-family: "Bower-Bold";
   src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot");
@@ -138,6 +218,13 @@ body {
     url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.svg#Bower-Bold")
       format("svg");
 }
+
+@media (max-width: 875px){
+  .newsletter-landing-text img {
+    display: none;
+  }
+}
+
 
 @media (max-width: 768px) {
   .introduction {
@@ -166,5 +253,41 @@ body {
     position: absolute;
     bottom: -12px; 
     left: -50px; 
+  }
+
+  .newsletter-landing {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .newsletter-landing-text {
+    align-items: center; 
+    text-align: center;
+  }
+
+  .newsletter-landing-text ul {
+    text-align: left !important;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .newsletter-landing-text img {
+    display: none; 
+  }
+
+  .newsletter-signup-landing {
+    margin-top: 20px; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsletter-signup-landing iframe {
+    max-width: 100%;
+    width: 90%;
+    height: 100%;
   }
 }

@@ -165,7 +165,7 @@ body {
 .newsletter-landing-text img {
   width: 60%;
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 85%;
   rotate: -20deg;
   transform: translate(20px, -50%);
@@ -204,18 +204,18 @@ body {
   width: 100%;
 }
 
-.latest-articles-landing {
+.latest-articles-landing, .latest-youtube-landing {
   margin-top: 20px;
 }
 
-.latest-articles-landing h1 {
+.latest-articles-landing h1, .latest-youtube-landing h1 {
   font-size: 2rem;
   color: #333;
   font-family: "Bowser-Bold";
   margin: 20px 0;
 }
 
-.latest-articles-landing p {
+.latest-articles-landing p, .latest-youtube-landing p {
   font-size: 1.2rem;
   color: #666;
   margin: 0;
@@ -322,7 +322,7 @@ body {
   text-decoration: underline;
 }
 
-.view-all-articles-button {
+.view-all-articles-button, .go-to-channel-button {
   padding: 15px 25px;
   font-size: 1.2rem;
   background-color: #fd976e;
@@ -335,17 +335,42 @@ body {
   color: black;
 }
 
-.view-all-articles-button:hover {
+.view-all-articles-button:hover, .go-to-channel-button:hover {
   background-color: #ffbd59;
   transition: 0.3s ease;
 }
 
-.article-button-landing-wrap {
+.content-button-landing-wrap {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 20px 0;
 }
+
+.youtube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  max-width: 900px; 
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 56.25%; 
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 @media (max-width: 875px) {
   .newsletter-landing-text img {

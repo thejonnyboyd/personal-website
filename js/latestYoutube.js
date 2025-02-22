@@ -1,5 +1,6 @@
-const API_KEY = "AIzaSyBeRruC9wyIFrlDqR1SXqVuPvhBU3Xjpcw";
-const CHANNEL_ID = "UCe95Snf07fI27HNR1S4_YDw";
+const API_KEY = CONFIG.YOUTUBE_API_KEY;
+const CHANNEL_ID = CONFIG.YOUTUBE_CHANNEL_ID;
+
 const youtubeContainer = document.getElementById("youtube-container");
 
 async function fetchLatestYouTubeVideo() {

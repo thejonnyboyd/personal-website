@@ -604,6 +604,109 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+.gear {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gear h1{
+  font-size: 2rem;
+  color: #333;
+  font-family: "Bower-Bold";
+}
+
+.gear p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+.gear-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 5px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+}
+
+.gear-box p{
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.gear-info {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.gear-info h3{
+  font-size: 1.3rem;
+  color: #333;
+  font-family: "Bower-Bold";
+}
+
+.apps, .edc, .desk_setup, .other{
+  padding-top: 10px;
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.app-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.app-info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 15%;
+}
+
+.app-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.app-description {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.get-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.get-button:hover {
+  background-color: #ababab;
+}
+
 @media (max-width: 875px) {
   .newsletter-landing-text img {
     display: none;
@@ -691,9 +794,9 @@ p {
   }
 
   .beyond_coding {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     margin: 0;
     padding: 0;
   }

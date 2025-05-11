@@ -536,6 +536,11 @@ p {
   width: 50%;
 }
 
+.about_list a{
+  color: #666;
+  font-family: "Bower-Bold";
+}
+
 .about h1,
 .about h2,
 .about h3 {
@@ -556,6 +561,16 @@ p {
   margin: 0;
   font-family: sans-serif;
   margin-bottom: 20px;
+}
+
+.professional_certs img{
+  height: 150px;
+}
+
+.professional_certs h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .beyond_coding {
